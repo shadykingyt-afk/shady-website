@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flarial Client - Download the Best Gaming Client</title>
+
+  <!-- Description for SEO -->
+  <meta name="description" content="Download Flarial Client, the ultimate lightweight gaming client with smooth performance and all the latest features.">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Flarial Client">
+  <meta property="og:title" content="Flarial Client - Download the Best Gaming Client">
+  <meta property="og:description" content="Download Flarial Client, the ultimate lightweight gaming client with smooth performance and all the latest features.">
+  <meta property="og:image" content="https://cdn.discordapp.com/assets/og_img_discord_home.png">
+  <meta property="og:url" content="https://yourwebsite.com">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Flarial Client - Download the Best Gaming Client">
+  <meta name="twitter:description" content="Download Flarial Client, the ultimate lightweight gaming client with smooth performance and all the latest features.">
+  <meta name="twitter:image" content="https://cdn.discordapp.com/assets/og_img_discord_home.png">
+
+  <!-- Favicon -->
+  <link rel="icon" href="logo.png" type="image/png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="navbar-left">
+      <button class="navbar-button" onclick="openPage('homePage')">Home</button>
+      <button class="navbar-button" onclick="openPage('downloadPage')">Download</button>
+      <button class="navbar-button" onclick="openPage('helpPage')">Help</button>
+      <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+      <button class="translate-button" onclick="toggleLanguage()">🌐</button>
+    </div>
+    <div class="navbar-right">
+      <img src="logo.png" alt="Logo" class="navbar-logo">
+    </div>
+  </div>
+
+  <!-- Pages -->
+  <div id="homePage" class="page-container page-card">
+    <h2 class="page-heading">Home</h2>
+    <p class="page-text">Welcome to Flarial Client! Download the latest version quickly and enjoy smooth performance.</p>
+  </div>
+
+  <div id="downloadPage" class="page-container page-card">
+    <h2 class="page-heading">Download</h2>
+    <p class="page-text">Click below to download the latest Flarial Client:</p>
+    <button class="download-button" onclick="window.location.href='Flarial.Launcher.exe'">Download Now</button>
+  </div>
+
+  <div id="helpPage" class="page-container page-card">
+    <h2 class="page-heading">Help</h2>
+    <p class="page-text">Need support? Click the email box to copy our support email:</p>
+    <p class="page-text email-box" onclick="navigator.clipboard.writeText('support@gmail.com')">support@gmail.com</p>
+  </div>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
