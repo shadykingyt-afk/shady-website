@@ -66,8 +66,24 @@ body {
   transition: background-color 0.2s;
 }
 
-.navbar-button { background-color: var(--navbar-button-bg); color: #fff; }
-.navbar-button:hover { background-color: var(--navbar-button-hover); }
+.navbar-button {
+  background-color: var(--navbar-button-bg);
+  color: #fff;
+  transition: background-color 0.2s;
+}
+
+.navbar-button:hover {
+  background-color: var(--navbar-button-hover);
+}
+
+/* الوضع الليلي hover */
+[data-theme="dark"] .navbar-button:hover {
+  background-color: #1a8cff; /* أفتح أزرق شوية */
+}
+
+.navbar-button:active, .download-button:active {
+  transform: translateY(1px);
+}
 
 .theme-toggle { background-color: #ff9500; color: #fff; }
 .theme-toggle:hover { opacity: 0.85; }
